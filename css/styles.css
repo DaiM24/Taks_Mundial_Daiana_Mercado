@@ -1,0 +1,23 @@
+body#login {
+    background: url(../assets/messi.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn-inicio{
+    background-color: #374785;
+    color: #ffffff;
+}
+.flex-logo {
+    display: flex;
+    justify-content: end;
+    padding: 5px 15px;
+}
