@@ -12,32 +12,33 @@
 </head>
 
 <body id="login">
-    <div class="container-login">
-        <main>
-            <div class="div-card">
-                <form class="bg-white px-5 py-4 rounded">
-                    <h1>Inicio de sesión</h1>
-                    <div class="col-md-12">
-                        <label for="validationServer01" class="form-label">Email *</label>
-                        <input type="text" class="form-control" id="validationServer01" value="" required>
-                    </div>
-                    <div class="col-md-12 mt-2">
-                        <label for="validationServer02" class="form-label">Password *</label>
-                        <input type="password" class="form-control" id="validationServer02" value="" required>
-                    </div>
-                    <div class="mt-3">
-                        <a href="#" class="btn btn-dark btn-inicio col-12" >Iniciar sesión</a>
-                        <!-- <button type="button" class="btn btn-dark btn-inicio col-12" >Iniciar sesión</button> -->
-                    </div>
-                </form>
-            </div>
-        </main>
-    </div>
+    <main class="container-login">
+        <div class="displayLogo">
+            <img src="./assets/Logo_copa.png" alt="Logo Copa">
+        </div>
+        <div class="div-form">
+            <form class="bg-white px-5 py-4 rounded formStyle">
+                <h1 class="fs-4 fw-bolder text-center">Inicio de sesión</h1>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" value="" required>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <label for="password" class="form-label">Password *</label>
+                    <input type="password" class="form-control" id="password" value="" required>
+                </div>
+                <div class="my-3 ">
+                    <button type="submit" class="btn btn-dark btn-inicio col-12" >Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer>
-        <div class="bg-white flex-logo">
-            <img src="./assets/Logo_Guayerd.png" alt="Logo Guayerd">
+        <div class="bg-white flex-logo py-1">
+            <a href="https://www.guayerd.com/es/inicio/" target="_blank"><img src="./assets/Logo_Guayerd.png" alt="Logo Guayerd" target="_blank"></a>
         </div>
     </footer>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

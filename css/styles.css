@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    font-family: 'Raleway';
+}
 body#login {
     background: url(../assets/messi.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -12,12 +16,50 @@ body#login {
     align-items: center;
     height: 100vh;
 }
+.formStyle{
+    box-shadow: 0px 6px 4px 0px #00000040;
+    width: 364px;
+}
 .btn-inicio{
     background-color: #374785;
     color: #ffffff;
 }
-.flex-logo {
-    display: flex;
-    justify-content: end;
-    padding: 5px 15px;
+.flex-logo{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: #ffffff;
+    text-align: end;
+    padding-right: 15px;
+}
+.displayLogo{
+    display: none;
+}
+/* .navbar-toggler {
+    background-color:#374785;
+} */
+
+@media only screen and (max-width: 500px) {
+    body#login{
+        background: transparent; 
+    }
+    .displayLogo{
+        display: flex;
+    }
+    .flex-logo{
+        text-align: center;
+        padding-right: 0px;
+    }
+    form{
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .displayLogoMovile{
+        display: none;
+    }
+}
+
+#map { height: 690px;
 }
