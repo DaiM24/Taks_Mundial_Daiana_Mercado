@@ -39,7 +39,11 @@ body#login {
 /* .navbar-toggler {
     background-color:#374785;
 } */
-
+.fix {
+    position: fixed;
+    top: 10%;
+    right: 24%;
+}
 @media only screen and (max-width: 500px) {
     body#login{
         background: transparent; 
@@ -54,6 +58,9 @@ body#login {
     form{
         box-shadow: none;
     }
+    /* .displayLogoMovile{
+        display: none;
+    } */
 }
 @media only screen and (max-width: 500px) {
     .displayLogoMovile{
@@ -61,5 +68,7 @@ body#login {
     }
 }
 
-#map { height: 690px;
+#map { 
+    height: 100vh;
+    z-index: -1;
 }
