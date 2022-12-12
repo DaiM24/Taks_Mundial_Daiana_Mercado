@@ -42,7 +42,7 @@ body#login {
 .fix {
     position: fixed;
     top: 10%;
-    right: 24%;
+    right: 28%;
 }
 @media only screen and (max-width: 500px) {
     body#login{
@@ -71,4 +71,7 @@ body#login {
 #map { 
     height: 100vh;
     z-index: -1;
+}
+#nav {
+    z-index: 1;
 }
