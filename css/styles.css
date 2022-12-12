@@ -55,21 +55,21 @@ body#login {
         text-align: center;
         padding-right: 0px;
     }
-    form{
+    .formStyle{
         box-shadow: none;
     }
-    /* .displayLogoMovile{
-        display: none;
-    } */
-}
-@media only screen and (max-width: 500px) {
     .displayLogoMovile{
         display: none;
     }
 }
+/* @media only screen and (max-width: 500px) {
+    .displayLogoMovile{
+        display: none;
+    }
+} */
 
 #map { 
-    height: 100vh;
+    height: 93vh;
     z-index: -1;
 }
 #nav {
