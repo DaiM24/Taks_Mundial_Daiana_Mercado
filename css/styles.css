@@ -75,3 +75,7 @@ body#login {
 #nav {
     z-index: 1;
 }
+
+:root {
+    --border-radius: 5px;
+}

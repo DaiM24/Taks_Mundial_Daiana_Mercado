@@ -76,5 +76,9 @@ let buttonClosed = document.getElementById('cerrarSesion')
 
 buttonClosed.addEventListener('click', ()=>{
     localStorage.removeItem("logged", "true");
-    window.location.href = '../index.html';
+    window.location.replace('../index.html');
 })
+
+if(!localStorage.getItem("logged", "true")){
+    window.location.replace('../index.html')
+}
