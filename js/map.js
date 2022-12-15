@@ -54,7 +54,7 @@ const objetoMapa = [
 const select = document.querySelector('select');
       //select.onchange = changeMap
 // Opcion 1
-let jugadores = objetoMapa.map((objeto) =>`<option>${objeto.jugador}</option>`)
+let jugadores = objetoMapa.map((objeto) =>`<option value="" hidden="">El camino que recorrí...</option><option>${objeto.jugador}</option>`)
 let jugadoresOptions = jugadores.join().replace(',', '')
 select.innerHTML = jugadoresOptions
 
