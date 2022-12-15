@@ -74,6 +74,12 @@ body#login {
     font-size: 28px;
     color: #FFFFFF;
 }
+/* .blur {
+    filter: blur(1px);
+}
+.blur:hover {
+    filter: blur(0px);
+} */
 @media only screen and (max-width: 500px) {
     body#login{
         background: transparent; 

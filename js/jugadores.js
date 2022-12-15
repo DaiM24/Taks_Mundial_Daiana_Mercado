@@ -18,16 +18,16 @@ fetch(`https://639a5b283a5fbccb52654901.mockapi.io/jugadores`)
             <div class="card card-style">
                 <div class="img-wrapper">
                     <span class="dorsal">${jugador.dorsal}</span>
-                    <img src="https://julioavantt.github.io/guayerd-project-images/img/${jugador.dorsal}.jpg" class="card-img-top" alt="${jugador.name}">
+                    <img src="https://julioavantt.github.io/guayerd-project-images/img/${jugador.dorsal}.jpg" class="card-img-top blur" alt="${jugador.name}">
                 </div>
-                <div class="card-body">
+                <div class="card-body m-2">
                     <h5 class="card-title fw-bold">${jugador.name}</h5>
-                    <p class="card-text m-0">Edad: ${jugador.edad}</p>
-                    <p class="card-text m-0">Posición: ${jugador.posicion}</p>
-                    <p class="card-text m-0">Peso: ${jugador["stats-fisico"].peso}</p>
-                    <p class="card-text m-0">Altura: ${jugador["stats-fisico"].altura}</p>
-                    <p class="card-text m-0">Equipo actual: ${jugador.equipoactual}</p>
-                    <p class="card-text m-0">Equipo de nacimiento: ${jugador["fecha-nacimiento"]}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Edad:</span> ${jugador.edad}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Posición:</span> ${jugador.posicion}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Peso:</span> ${jugador["stats-fisico"].peso}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Altura:</span> ${jugador["stats-fisico"].altura}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Equipo actual:</span> ${jugador.equipoactual}</p>
+                    <p class="card-text m-0"><span class="fw-bold">Equipo de nacimiento:</span> ${jugador["fecha-nacimiento"]}</p>
                 </div> 
             </div>
         </div>
