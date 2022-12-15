@@ -75,10 +75,11 @@ function changeMap() {
 let buttonClosed = document.getElementById('cerrarSesion')
 
 buttonClosed.addEventListener('click', ()=>{
-    localStorage.removeItem("logged", "true");
+    localStorage.removeItem("logged");
     window.location.replace('../index.html');
 })
 
-if(!localStorage.getItem("logged", "true")){
+if(!localStorage.getItem("logged")){
     window.location.replace('../index.html')
 }
+

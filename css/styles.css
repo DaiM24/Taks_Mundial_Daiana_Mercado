@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 *{
     font-family: 'Raleway';
 }
@@ -36,13 +37,42 @@ body#login {
 .displayLogo{
     display: none;
 }
-/* .navbar-toggler {
-    background-color:#374785;
-} */
+.container-map {
+    position: relative;
+}
 .fix {
-    position: fixed;
-    top: 10%;
-    right: 28%;
+    position: absolute;
+    left: 29%;
+    z-index: 1;
+}
+.select-styles{
+    box-shadow: 0px 4px 4px rgba(25, 1, 1, 0.25), inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+}
+#map { 
+    height: 92vh;
+    z-index: -1;
+}
+:root {
+    --border-radius: 5px;
+}
+.tittle-styles {
+    color: #119DD8;
+}
+.card-style {
+    box-shadow: 0px 6px 4px 0px #00000040;
+}
+.img-wrapper {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.dorsal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFFFFF;
 }
 @media only screen and (max-width: 500px) {
     body#login{
@@ -62,20 +92,5 @@ body#login {
         display: none;
     }
 }
-/* @media only screen and (max-width: 500px) {
-    .displayLogoMovile{
-        display: none;
-    }
-} */
 
-#map { 
-    height: 93vh;
-    z-index: -1;
-}
-#nav {
-    z-index: 1;
-}
 
-:root {
-    --border-radius: 5px;
-}
