@@ -1,13 +1,12 @@
-// En coordinates guardamos las coordenadas donde se lugar donde se centra el mapa
+// Guardamos las coordenadas
 let coordinates = [25.2841478, 51.4419568];
-// En la variable map enviamos el centrod de mapa y el zoom inicial (12)
 let map = L.map('map').setView(coordinates, 11);
 // Creamos el mapa
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-//Icono
+// Icono
 let icon = L.icon({
     iconUrl: "../assets/marker.png",
     iconSize: [30, 45],
@@ -52,7 +51,7 @@ const objetoMapa = [
 ];
 
 const select = document.querySelector('select');
-      //select.onchange = changeMap
+// select.onchange = changeMap
 // Opcion 1
 let jugadores = objetoMapa.map((objeto) =>`<option value="" hidden="">El camino que recorrí...</option><option>${objeto.jugador}</option>`)
 let jugadoresOptions = jugadores.join().replace(',', '')
