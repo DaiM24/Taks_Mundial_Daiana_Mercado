@@ -15,7 +15,7 @@ let icon = L.icon({
 });
 let marker = L.marker(coordinates, {icon: icon}).addTo(map);
 // popUp
-marker.bindPopup('<b>Lo logramos!!!</b>').openPopup();
+marker.bindPopup(`<b>Qatar 2022</b><br>Campeones!!!`).openPopup();
 
 const objetoMapa = [
     {
