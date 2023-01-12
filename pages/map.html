@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light" id="nav">
+    <nav class="navbar navbar-expand-lg bg-light z-3" id="nav">
         <div class="container-fluid">
             <div class="d-flex justify-content-start">
                 <a class="navbar-brand displayLogoMovile" href="https://www.guayerd.com/es/inicio/" target="_blank">
@@ -51,11 +51,14 @@
             </div>
         </div>
     </nav>
-    <main class="container-map">
-        <div class="d-flex justify-content-center fix col-sm-5">
+    <main>
+        <div class="container-map z-1 position-absolute">
+            <div id="map"></div>
+        </div>
+        
+        <div class="d-flex justify-content-center fix col-sm-5 z-2 position-absolute">
             <select class="form-select my-3 select-styles" onchange="changeMap()" aria-label="Default select example"></select>
         </div>
-        <div id="map"></div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
